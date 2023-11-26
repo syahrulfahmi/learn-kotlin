@@ -1,0 +1,5 @@
+collection merupakan struktur data yang berisikan sejumlah data dan bahkan bisa kosong
+- di kotlin sudah ada standard library untuk dapat menggunakan collection
+- secara garis besar terdapat 2 jenis collection
+    - immutable: collection yang hanya terdapat operasi read only atau tidak dapat diubah isi datanya dan hanya dapat mengambil data dari collection saja.
+    - mutable: collection yang bisa memiliki operasi manipulasi data pada collection seperti add, remove, edit.

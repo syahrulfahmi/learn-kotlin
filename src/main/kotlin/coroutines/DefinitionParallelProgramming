@@ -1,0 +1,14 @@
+paralel programming adalah memecahkan suatu permasalahan dengan cara membaginya menjadi lebih kecil dan dijalankan secara bersamaan (paralel)
+contoh paralel :
+    - membuka aplikasi secara berasamaan
+    - koki yang menyiapkan makanan yang dipesan. tiap koki akan menyiapkan makanan yang dipesan.
+    - antrian di bank dimana tiap teller melayani nasabah secara bersamaan.
+
+PROSES & THREAD
+    proses adalah sebuah eksekusi program (satu aplikasi yang berjalan)
+        - proses mengkonsumsi banyak memori
+        - proses saling terisolasi antar proses yang lain
+    thread adalah segmen/bagian dari proses. satu buah proses bisa dibuat dari satu atau lebih thread.
+        - thread menggunakan memori yang kecil
+        - thread bisa saling berkomunikasi selama masih dalam satu proses
+        - thread cepat dijalankan dan dihentikan

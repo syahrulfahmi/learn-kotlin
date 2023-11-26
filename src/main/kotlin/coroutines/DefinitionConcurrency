@@ -1,0 +1,25 @@
+CONCURRENCY
+==================================================
+Concurrency adalah menjalankan beberapa pekerjaan secara bergantian diwaktu yang bersamaan.
+Contoh concurrency :
+    Saat di kafe kita makan, lalu ngobrol, lalu minum, setelah itu bisa balik lagi ke makan dan begitu seterusnya.
+
+Kapan pake parallel atau concurrency ?
+    CPU-BOUND : Ketika suatu proses atau algoritma membutuhkan jumlah core yang banyak lebih disarankan menggunakan parallel programming (machine learning).
+    IO-BOUND  : Ketika suatu proses membutuhkan proses input/output seperti http call, reading database, etc. Hal ini bisa di bantu dengan parralel programing
+                namun akan lebih baik jika menggunakan concurrency programming.
+
+Salah satu implementasi concurrency programming adalah dengan menggunakan coroutines.
+
+COROUTINES
+==================================================
+Coroutine sering disebut sebagai lighweight thread (thread ringan). Coroutine di eksekusi di sebuah thread.
+Corutine terbilang murah jika dibandingkan dengan thread dalam penggunaan memory. Pada coroutine harus mengerti tentang
+suspend fungsi.
+Coroutine tidak bisa berjalan sendiri, dia perlu berjalan didalam sebuah scope. Salah satu scope yang sering digunakan adalah
+GlobalScope dan untuk menjalankan nya menggunakan method launch().
+
+SUSPEND FUN
+==================================================
+Suspend func adalah proses yang bisa ditangguhkan waktu eksekusinya. Kotlin memiliki fitur suspending func dimana
+program akan mengeksekusi fungsi tanpa harus memblock thread yang sedang menjalankanya.

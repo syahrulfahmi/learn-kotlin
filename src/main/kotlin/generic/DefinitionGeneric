@@ -1,0 +1,4 @@
+
+Generic adalah kemampuan mendefinisikan sebuah parameter type pada saat kompilasi sehingga meminimalisir terjadinya
+kesalahan parsing parameter type pada saat aplikasi runtime.
+Generic memungkinkan kita membuat sebuah parameter type yang dapat diubah-ubah sefleksibel mungkin.

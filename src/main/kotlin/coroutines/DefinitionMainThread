@@ -1,0 +1,22 @@
+Setiap kali proses di ekseskusi, proses itu akan dijalankan pada thread utama atau main thread.
+setiap program minimal memiliki satu thread.
+di kotlin namanya main thread
+di JUnit namanya Test Worker.
+
+Kotlin menggunakan java thread. Untuk membuat thread kita bisa menggunakan Runnable()
+
+Masalah dengan thread adalah pada proses pembuatan yang cukup mahal. satu thread sudah memakan memori sekitar 1 MB
+untuk os 64 bit dan 512 kb untuk os yang 32 bit. Sehingga penggunaan thread secara manual kurang disarankan karena
+thread itu sendiri bisa dibuat/digunakan ulang.Hal ini dapat dilakukan menggunakan executor service.
+
+Executor Service adalah objek/fitur JVM untuk manajemen thread dengan menggunakan class Executors.
+    - newSingleThreadExecutor   : membuat executor service dengan 1 thread
+    - newFixedThreadPool(int)   : membuat executor service dengan n thread
+    - newCachedThreadPool       : membuat executor service dengan thread yang meningkat sesuai kebutuhan
+
+THREADPOOL
+thread pool adalah tempat yang berisi antrian/queue untuk menyimpan thread.
+
+PROBLEM JAVA THREAD
+Java Thread tidak didesign untuk concurrency programming.
+Java Thread hanya bisa melakukan sampai selesai baru melakukan hal lain.
